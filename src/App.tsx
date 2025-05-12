@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 type Todo = {
   id: number;
@@ -14,6 +14,9 @@ function App() {
       ? (JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) as any) as Todo[])
       : []
   );
+  const sortedTodos = useMemo(() => {
+    return [...todos].sort((a, b) => b.id - a.id);
+  }, [todos]);
   const [input, setInput] = useState("");
 
   const onChangeTodos = (todos: Todo[]) => {
@@ -69,7 +72,7 @@ function App() {
         </div>
 
         <ul className="space-y-2">
-          {todos.map((todo) => (
+          {sortedTodos.map((todo) => (
             <li
               key={todo.id}
               className={`flex justify-between items-center gap-4 p-3 border rounded ${
