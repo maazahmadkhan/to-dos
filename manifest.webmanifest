@@ -1,0 +1,1 @@
+{"name":"My React App","short_name":"ReactApp","description":"A React app with offline support","start_url":"/to-dos/","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","lang":"en","scope":"/to-dos/","icons":[{"src":"pwa-192x192.png","sizes":"192x192","type":"image/png"},{"src":"pwa-512x512.png","sizes":"512x512","type":"image/png"}]}
