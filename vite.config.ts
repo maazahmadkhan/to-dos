@@ -29,5 +29,8 @@ export default defineConfig({
 				]
 			}
 		})
-	]
+	],
+	css: {
+		postcss: './postcss.config.cjs' // or correct path
+	}
 });
