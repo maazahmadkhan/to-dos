@@ -16,6 +16,9 @@ const config = {
 		},
 		paths: {
 			base: dev ? '' : '/to-dos'
+		},
+		prerender: {
+			entries: ['*']
 		}
 	}
 };
