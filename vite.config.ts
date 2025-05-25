@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+	base: '/to-dos/',
 	plugins: [
 		tailwindcss(),
 		sveltekit(),
@@ -29,8 +30,5 @@ export default defineConfig({
 				]
 			}
 		})
-	],
-	css: {
-		postcss: './postcss.config.cjs' // or correct path
-	}
+	]
 });
