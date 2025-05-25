@@ -44,7 +44,7 @@
 						addTodo();
 					}
 				}}
-				placeholder="Add a new task"
+				placeholder="Add a new task1"
 				class="w-full grow rounded border border-gray-300 p-2"
 			/>
 			<button on:click={addTodo} class="h-[42px] w-40 rounded bg-blue-500 px-1 text-white">
