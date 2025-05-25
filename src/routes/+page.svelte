@@ -6,5 +6,6 @@
 	<TodoList />
 </main>
 
-<style>
+<style lang="postcss">
+	@reference "tailwindcss";
 </style>
